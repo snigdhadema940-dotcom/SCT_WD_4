@@ -1,0 +1,80 @@
+/* DARK BACKGROUND */
+body {
+    background-color: #0f172a;
+    font-family: 'Segoe UI', sans-serif;
+    color: #e2e8f0;
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: #38bdf8;
+}
+
+/* FORM CONTAINER */
+.form {
+    width: 50%;
+    margin: 40px auto;
+    padding: 30px;
+    background: #1e293b;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+}
+
+/* LABELS */
+.form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+/* INPUT + TEXTAREA */
+.form input[type="text"],
+.form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* FOCUS EFFECT */
+.form input:focus,
+.form textarea:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 8px rgba(56,189,248,0.5);
+}
+
+/* SUBMIT BUTTON */
+.form input[type="submit"] {
+    margin-top: 20px;
+    padding: 12px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0f172a;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.form input[type="submit"]:hover {
+    background: #0ea5e9;
+    transform: scale(1.03);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .form {
+        width: 90%;
+    }
+}

@@ -1,0 +1,105 @@
+/* BACKGROUND */
+body {
+    background-color: #0f172a;
+    font-family: 'Segoe UI', sans-serif;
+    color: #e2e8f0;
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #38bdf8;
+}
+
+/* ADD BUTTON */
+.add {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.add:hover {
+    background: #16a34a;
+    transform: scale(1.05);
+}
+
+/* CONTAINER */
+#container {
+    width: 70%;
+    margin: auto;
+}
+
+/* TASK CARD */
+.task {
+    background: #1e293b;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.task:hover {
+    transform: scale(1.02);
+}
+
+/* LINK AREA */
+.task-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* TITLE */
+.task h3 {
+    color: #facc15;
+    margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.task p {
+    color: #cbd5f5;
+}
+
+/* BUTTON AREA */
+.actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+/* BUTTONS */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* UPDATE BUTTON */
+.update {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+.update:hover {
+    background: #0ea5e9;
+}
+
+/* DELETE BUTTON */
+.delete {
+    background: #ef4444;
+    color: white;
+}
+
+.delete:hover {
+    background: #dc2626;
+}

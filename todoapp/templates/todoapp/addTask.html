@@ -1,0 +1,15 @@
+{% extends "todoapp/layout.html" %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'todoapp/addTask.css' %}">
+    <h1>Add Task</h1>
+    <form method="POST" action="{%url 'todoapp:addTask'%}" class="form">
+        {% csrf_token%}
+        {{ form.title.label_tag }}
+        {{ form.title }}
+        
+{{ form.description.label_tag }}
+{{ form.description }}  
+        <input type="submit">
+    </form>
+{% endblock %}

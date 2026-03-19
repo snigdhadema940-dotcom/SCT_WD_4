@@ -1,0 +1,11 @@
+{% extends "todoapp/layout.html" %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'todoapp/taskDetail.css' %}">
+    <h1>Task Details</h1>
+    <div id="container">       
+            <h3>{{task.title}}</h3>
+            <p>{{task.description}}</p>
+    </div>
+    <a href="{% url 'todoapp:index'%}">View all tasks</a>
+{% endblock %}

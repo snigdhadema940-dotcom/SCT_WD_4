@@ -1,0 +1,33 @@
+
+{% extends "todoapp/layout.html" %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'todoapp/style.css'%}">
+    <h1>To Do List</h1>
+    <a href="{% url 'todoapp:addTask'%}" class="add">Add Task</a>
+    <div id="container">
+       {% for task in tasks %}
+    <div class="task">
+        
+        <!-- Clickable title -->
+        <a href="{% url 'todoapp:taskDetail' task_id=task.id %}" class="task-link">
+            <h3>{{task.title}}</h3>
+            <p>{{task.description}}</p>
+        </a>
+
+        <!-- Buttons -->
+        <div class="actions">
+            <a href="{% url 'todoapp:updateTask' task_id=task.id %}">
+                <button class="update">Update</button>
+            </a>
+
+            <a href="{% url 'todoapp:deleteTask' task_id=task.id %}">
+                <button class="delete">Delete</button>
+            </a>
+        </div>
+
+    </div>
+    {% endfor %}
+    </div>
+    
+{% endblock %}
